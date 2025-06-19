@@ -1,0 +1,87 @@
+
+body{
+    background-color: #e7eaee;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+h2{
+    color: #ffffff;
+    font-size: 15px;
+}
+p , h3{
+    color: hsl(214, 17%, 92%);
+    font-size: 13px;
+}
+.three  p, .three  h3 , .five  p, .five  h3 {
+    color: hsl(219, 29%, 14%);
+}
+.three h2 , .five h2{
+    color: hsl(0, 0%, 7%)
+}
+
+
+.container{
+    margin-top: 24px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    gap: 32px;
+    margin-inline: auto;
+}
+.card{
+    border-radius: 10px;
+    padding: 24px;
+    line-height: 1.2rem;
+    box-shadow: 100px #000;
+}
+.one{
+    background-color: #7541c8;
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 50px;
+    grid-column: span 2;
+    
+}
+.two{
+    background-color: #48556a;
+}
+.three{
+    background-color: #ffffff;
+    grid-column-start: 0;
+    grid-row-start: 2;
+}
+.four{
+    background-color: #19212e;
+    grid-column: span 2;
+}
+.five{
+    background-color: #ffffff;
+    padding: 24px;
+    grid-area: 1 / 4 / 3 /4;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.status{
+    width: auto;
+    height: auto;
+    display: block;
+}
+.status h3 , .status p{
+    margin: 0;
+}
+img{
+    margin-right: 16px ;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+@media (max-width: 431px) {
+    .container{
+        display: block;
+    }
+    .card{
+        margin: 24px 0;
+    }
+}
